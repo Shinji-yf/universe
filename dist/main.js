@@ -89,10 +89,10 @@ function init() {
 
     //テクスチャ
     const Texloader = new THREE.TextureLoader();
-    const Etexture = Texloader.load('../img/earthmap1k.jpg');
-    const Ctexture = Texloader.load('../img/2k_earth_clouds.png');
-    const Mtexture = Texloader.load('../img/moonmap2k.jpg');
-    const Stexture = Texloader.load('../img/2k_sun.jpg')
+    const Etexture = Texloader.load('./earthmap1k.jpg');
+    const Ctexture = Texloader.load('./2k_earth_clouds.png');
+    const Mtexture = Texloader.load('./moonmap2k.jpg');
+    const Stexture = Texloader.load('./2k_sun.jpg')
 
     //地球作成
     //メッシュオブジェクト作成
