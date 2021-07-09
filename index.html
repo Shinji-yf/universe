@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D test</title>
+    <script src="./js/three.min.js" ></script>
+    <script src="js/GLTFLoader.js"></script>
+    <script src="./js/OrbitControls.js"></script>
+    <script src="./js/CSS3DRenderer.js"></script>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="audioController">
+        <audio id="bgm" class="BGM" src="./img/宇宙空間.mp3" controls loop></audio>
+    </div>
+    <div class="contentContainer">
+        <div id="MC" class="mainContent">
+
+            <canvas id="mainCanvas"></canvas>
+
+            <div id="sec0" class="section s0">
+                <div class="Ftitle"><p>UNIVERSE</p></div>
+                <p class="EEE">音が鳴ります</p>
+                <form action="" method="POST" class="forms" id="enters">
+                    <input type="submit" value="ENTER" class="btn">
+                </form>
+                <small>bgm:https://dova-s.jp/bgm/play2576.html</small>
+                <small>sentense: Wikipedia</small>
+            </div>
+            <section id="sec1" class="section s1">
+                <div class="title"><p>EARTH</p></div>
+                <div class="sentens">Earth is the third planet from the Sun and the only astronomical object known to harbor and support life. About 29.2% of Earth's surface is land consisting of continents and islands. The remaining 70.8% is covered with water, mostly by oceans, seas, gulfs, and other salt-water bodies, but also by lakes, rivers, and other freshwater, which together constitute the hydrosphere. Much of Earth's polar regions are covered in ice</div>
+            </section>
+
+            <section id="sec2" class="section s2">
+                <div class="title"><p>MOON</p></div>
+                <div class="sentens">The Moon is Earth's only natural satellite. At about one-quarter the diameter of Earth (comparable to the width of Australia), it is the largest natural satellite in the Solar System relative to the size of its planet, the fifth largest satellite in the Solar System overall, and is larger than any dwarf planet.</div>
+            </section>
+
+            <section id="sec3" class="section s3">
+                <div class="title"><p>SUN</p></div>
+                <div class="sentens">The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma,heated to incandescence by nuclear fusion reactions in its core, radiating the energy mainly as visible light, ultraviolet light, and infrared radiation. It is by far the most important source of energy for life on Earth.</div>
+            </section>
+
+            <section id="secG" class="section G">
+                <div class="title"><p>TRAVEL</p></div>
+            </section>
+        </div>  
+
+        <div id="SeCo" class="selectContent">
+            <form action="" method="POST" class="forms" id="earths">
+                <input type="submit" value="Earth" class="btn">
+            </form>
+
+            <form action="" method="POST" class="forms" id="moons">
+                <input type="submit" value="Moon" class="btn">
+            </form>
+
+            <form action="" method="POST" class="forms" id="suns">
+                <input type="submit" value="Sun" class="btn">
+            </form>
+
+            <form action="" method="POST" class="forms" id="Game">
+                <input type="submit" value="🛩" class="btn">
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
