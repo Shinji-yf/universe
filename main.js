@@ -171,7 +171,7 @@ function init() {
 
     //宇宙飛行船
     const gltfLoader = new THREE.GLTFLoader();   //GLTFローダーを定義
-    const glUrl = '../spacePlane.glb';     //読み込むglbファイルのパス
+    const glUrl = './spacePlane.glb';     //読み込むglbファイルのパス
     var spacePlane;
     gltfLoader.load(glUrl, (gltf) => {     //読み込み
         spacePlane = gltf.scene;
